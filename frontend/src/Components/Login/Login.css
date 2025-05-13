@@ -1,0 +1,145 @@
+/* Reset all default margins and paddings */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../../Assets/sound-wave.jpg');
+ 
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full screen layout with Flexbox */
+  .background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically */
+    padding: 40px;
+    position: relative;
+    background-color: #0098B8;
+    ; /* optional background fallback */
+    overflow: hidden;
+  }
+  
+.topright-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: 0;
+    max-width: 700px;
+    
+  }
+
+.Robot-banner-container {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    z-index: 1;
+    max-width: 700px;
+  }
+
+.wrapper {
+    width: 100%;
+    max-width: 420px; /* Adjust as needed */
+    background: transparent;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-forget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registration-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registration-link p a:hover {
+    text-decoration: underline;
+    color: rgb(87, 84, 86);
+}

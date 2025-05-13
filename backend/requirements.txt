@@ -1,0 +1,9 @@
+flask
+flask-cors
+tensorflow
+numpy
+librosa
+gradio_client
+huggingface_hub
+opencv-python
+requests
